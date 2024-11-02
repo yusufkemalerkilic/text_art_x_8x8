@@ -1217,7 +1217,7 @@ while not pixel or pixel.isspace() or pixel[0]==" " or pixel[-1]==" " or len(pix
 
             pixel=input("Please enter the pixel character(s) (it cannot contain only whitespace characters): ")
 
-    if len(pixel)>0:
+    while len(pixel)>0:
 
         while pixel[0]==" ":
 
@@ -1226,7 +1226,7 @@ while not pixel or pixel.isspace() or pixel[0]==" " or pixel[-1]==" " or len(pix
                 if len(pixel)==0:
                     break
 
-    if len(pixel)>0:
+    while len(pixel)>0:
 
         while pixel[-1]==" ":
 
