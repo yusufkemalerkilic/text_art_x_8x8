@@ -1169,11 +1169,11 @@ while not word or word.isspace() or word[0]==" " or word[-1]==" ":      # EN: Th
 
                                                                         # TR: Eğer kelime geçersizse, kullanıcıdan kelimeyi tekrar girmesi istenir.
 
-    while not word:
+    if not word:
             
             word=input("Please enter the word (cannot be empty): ")
 
-    while word.isspace():
+    if word.isspace():
 
             word=input("Please enter the word (it cannot contain only whitespace characters): ")
 
@@ -1209,15 +1209,15 @@ while not pixel or pixel.isspace() or pixel[0]==" " or pixel[-1]==" " or len(pix
                                                                                         # TR: Eğer piksel karakter(ler)i geçersizse,
                                                                                         # kullanıcıdan piksel karakter(ler)ini tekrar girmesi istenir.
 
-    while not pixel:
+    if not pixel:
             
             pixel=input("Please enter the pixel character(s) (cannot be empty): ")
 
-    while pixel.isspace():
+    if pixel.isspace():
 
             pixel=input("Please enter the pixel character(s) (it cannot contain only whitespace characters): ")
 
-    while len(pixel)>0:
+    if len(pixel)>0:
 
         while pixel[0]==" ":
 
@@ -1226,7 +1226,7 @@ while not pixel or pixel.isspace() or pixel[0]==" " or pixel[-1]==" " or len(pix
                 if len(pixel)==0:
                     break
 
-    while len(pixel)>0:
+    if len(pixel)>0:
 
         while pixel[-1]==" ":
 
@@ -1235,7 +1235,7 @@ while not pixel or pixel.isspace() or pixel[0]==" " or pixel[-1]==" " or len(pix
                 if len(pixel)==0:
                     break
 
-    while len(pixel)>3:
+    if len(pixel)>3:
             
             pixel=input("Please enter the pixel character(s) (up to 3 characters): ")
 
