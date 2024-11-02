@@ -1195,6 +1195,19 @@ while not word or word.isspace() or word[0]==" " or word[-1]==" ":      # EN: Th
                 if len(word)==0:
                     break
 
+if len(word)<=16:               # EN: The maximum number of characters that can be entered is determined according to the length of the word.
+    max=1
+if len(word)<=9:                # TR: Girilebilecek maksimum karakter sayısı, kelimenin uzunluğuna göre belirlenir.
+    max=2
+if len(word)<=6:
+    max=3
+if len(word)<=5:
+    max=4
+if len(word)<=4:
+    max=5
+if len(word)<=3:
+    max=7
+
 pixel=input("Please enter the pixel character(s): ")    # EN: The user is asked to enter the pixels that are the building blocks of the word
                                                         # to be written in text_art_x_8x8 format. Up to 3 characters are supported.
                                                         # None of these characters can be a space character.
@@ -1203,7 +1216,7 @@ pixel=input("Please enter the pixel character(s): ")    # EN: The user is asked 
                                                         # piksel karakter(ler)ini girmesi istenir. En fazla 3 karakter desteklenir.
                                                         # Bu karakterlerden hiçbiri boşluk karakteri olamaz.
 
-while not pixel or pixel.isspace() or pixel[0]==" " or pixel[-1]==" " or len(pixel)>3:  # EN: The user is asked to enter the pixel character(s) again
+while not pixel or pixel.isspace() or pixel[0]==" " or pixel[-1]==" " or len(pixel)>max:  # EN: The user is asked to enter the pixel character(s) again
                                                                                         # if the pixel character(s) is unvalid.
 
                                                                                         # TR: Eğer piksel karakter(ler)i geçersizse,
@@ -1235,9 +1248,9 @@ while not pixel or pixel.isspace() or pixel[0]==" " or pixel[-1]==" " or len(pix
                 if len(pixel)==0:
                     break
 
-    if len(pixel)>3:
+    if len(pixel)>max:
             
-            pixel=input("Please enter the pixel character(s) (up to 3 characters): ")
+            pixel=input(f"Please enter the pixel character(s) (up to {max} characters): ")
 
 
 
@@ -1275,6 +1288,7 @@ for line in range(8):                   # EN: This for loop allows us to treat t
                         print(" ",end="")
                 if column==8:    
                        print("  ",end="")
+
         if letter=="a":
             for column in range(8):
                 if a[line][column]==1:
@@ -2130,6 +2144,6 @@ for line in range(8):                   # EN: This for loop allows us to treat t
                                                 # TR: 'word' adlı değişkene atanan kelimedeki bütün karakterlerin ilgili matrislerdeki
                                                 # o döngüye ait listelere göre yazdırıldıktan sonra, bir alt satıra geçilir.
 
-input()                                         # EN: The program waits for the user to press ENTER key to close the program.
+input("Enter full screen for best results.\nPress ENTER to exit.")        # EN: The program waits for the user to press ENTER key to close the program.
     
-                                                # TR: Program kapanmak için kullanıcının ENTER tuşuna basmasını bekler.
+                                                                          # TR: Program kapanmak için kullanıcının ENTER tuşuna basmasını bekler.
