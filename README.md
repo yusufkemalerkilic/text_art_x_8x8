@@ -1,5 +1,14 @@
 # EN:
-
+<pre>
+X      X                XX         XX                     XX
+X      X                 X          X                     XX
+X      X                 X          X                     XX
+XXXXXXXX     XXXX        X          X         XXX         XX
+X      X    X    X       X          X        X   X        XX
+X      X    XXXXXX       X          X        X   X
+X      X    X            X          X        X   X        XX
+X      X     XXXX       XXX        XXX        XXX         XX
+</pre>
 Name: text_art_x_8x8.py
 
 Version: v1.0
@@ -24,13 +33,22 @@ After processing each list, two spaces are left to create a space between charac
 After outputting the screen according to the first list of the matrix for each character of the text entered by the user, skip the line and continue with the second lists of the same matrices.
 In this way, all lists are finished in order.
 
-**Attention!**
+**Attention!**  
 If you feel that you are not getting the desired result after entering the word, try making the window full screen.
 If that doesn't work, enter a shorter text. This problem is often caused by entering words that are too long to fit on your screen.
 
 
 # TR:
-
+<pre>
+X      X                         X                     X                        XX
+XX    XX                         X                     X                        XX
+X X  X X                         X                     X                        XX
+X  XX  X     XXXX                X XXXX       XXXX     X XXXX       XXXX        XX
+X      X    X    X       X       XX    X          X    XX    X          X       XX
+X      X    XXXXXX      X X      X      X     XXXXX    X      X     XXXXX
+X      X    X           X        X      X    X    X    X      X    X    X       XX
+X      X     XXXX       X        X      X     XXXXX     XXXXXX      XXXXX       XX
+</pre>
 İsim: text_art_x_8x8.py
 
 Sürüm: v1.0
@@ -56,6 +74,6 @@ Karakterler arasında boşluk oluşturmak için, her bir listenin işlenmesi son
 Kullanıcı tarafından girilen metnin her bir karakterine ait matrisin ilk listesine göre ekran çıktısı alındıktan sonra satır atlanırve aynı matrislerin ikinci listelerinden devam edilir.
 Bu şekilde bütün listeler sırasıyla bitirilir.
 
-**Dikkat!**
+**Dikkat!**  
 Kelimeyi girdikten sonra istediğiniz sonucu alamadığınızı düşünüyorsanız, pencereyi tam ekran yapmayı deneyin.
 Bu işe yaramazsa, daha kısa bir metin girin. Bu sorun genellikle ekranınıza sığmayacak kadar uzun kelimelerin girilmesinden kaynaklanır.
