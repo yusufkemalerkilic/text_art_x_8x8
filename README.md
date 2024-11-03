@@ -11,7 +11,7 @@ X      X     XXXX       XXX        XXX        XXX         XX
 </pre>
 **Name:** text_art_x_8x8
 
-**Version:** v1.1
+**Version:** 1.1.2
 
 **Author:** Yusuf Kemal Erkılıç
 
@@ -55,7 +55,7 @@ X      X     XXXX       X        X      X     XXXXX     XXXXXX      XXXXX       
 </pre>
 **İsim:** text_art_x_8x8_v1.1.py
 
-**Sürüm:** v1.1
+**Sürüm:** 1.1.2
 
 **Yazar:** Yusuf Kemal Erkılıç
 
