@@ -1165,7 +1165,7 @@ word=input("Please enter the word: ")   # EN: The user is asked to enter a word 
 
                                         # TR: Kullanıcıdan bir kelime girmesi istenir ve girilen kelime 'word' adlı değişkene atanır.
 
-while not word or word.isspace() or word[0]==" " or word[-1]==" ":      # EN: The user is asked to enter the word again if the word is unvalid.
+while not word or word.isspace() or word[0]==" " or word[-1]==" " or len(word)>16:      # EN: The user is asked to enter the word again if the word is unvalid.
 
                                                                         # TR: Eğer kelime geçersizse, kullanıcıdan kelimeyi tekrar girmesi istenir.
 
@@ -1194,6 +1194,10 @@ while not word or word.isspace() or word[0]==" " or word[-1]==" ":      # EN: Th
 
                 if len(word)==0:
                     break
+
+    if len(word)>16:
+
+                word=input("Please enter the word (up to 16 characters): ")
 
 if len(word)<=16:               # EN: The maximum number of characters that can be entered is determined according to the length of the word.
     max=1
